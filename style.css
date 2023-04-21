@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(10, 15, 23);
+    height: auto;
+    font-family: Asasin;
+}
+nav ul li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: rgb(33, 97, 144);
+    text-transform: uppercase;
+}
+a:hover{
+    transition: background-color 0.3s ease;
+}
+main{
+    border: 2px solid rgb(42, 103, 146);
+}
+button {
+    padding: 12px 36px;
+    background-color: #4189c4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    left: 45%;
+    font-family: Asasin;
+    font-size: 20px;
+}
+  
+button:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+  
+#naglowek{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+#nawigacja{
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+    font-size: 30px;
+}
+#logo{
+    border-radius: 25%;
+    position: sticky !important;
+}
+#stopka{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 50px;
+}
+#tlo {
+    background-image: url(IMG/tlo.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+    height: 1000px;
+}
+#strglowna{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: rgb(219, 212, 212);
+}
+#tekst {
+    font-size: 100px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: rgb(33, 97, 144);
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+}
+@font-face {
+    font-family: "Asasin";
+    src: url(FONTS/Van_Helsing/van_helsing.ttf);
+}
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgb(33, 97, 144);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.link:hover {
+    background-color: #2E8B57;
+}
+.link:active {
+    background-color: #228B22;
+    transform: translateY(2px);
+}
+.link:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+h1 {
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 0;
+  height: 3%;
+  width: 20px;
+  background: linear-gradient(to right, black, rgb(33, 97, 144));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 3%;
+    width: 20px;
+    background: linear-gradient(to left, black, rgb(33, 97, 144));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+h1:hover::before, h1:hover::after {
+  transform: scaleX(44);
+}
+.storyp{
+    color: rgb(33, 97, 144);
+    font-family: Asasin;
+    font-size: 30px;
+    text-align: justify;
+    text-indent: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.storyp img{
+    filter: brightness(60%);
+    border-radius: 6px;
+    border: 2px solid rgb(42, 103, 146);
+    margin: 5px;
+    width: 15%;
+    height: auto;
+}
+.storyp::first-letter{
+    font-size: 40px;
+}
+.storyimgl{
+    float: left;
+}
+.storyimgp{
+    float: right;
+}
+h2{
+    text-align: center;
+    color: rgb(33, 97, 144);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+#mainstory{
+    height: 800px;
+}
+#info{
+    position: fixed;
+    width: 15%;
+    height: 80px;
+    font-family: Asasin;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.3);
+    filter: brightness(50%);
+}
+table tr,td{
+    border: 2px solid rgb(42, 103, 146);
+}
+table{
+    border: 2px solid rgb(42, 103, 146);
+    color: white;
+    width: 35%;
+    margin-left: 16%;
+}
+.nazwa{
+    text-align: center;
+    padding: 3px;
+    font-size: 35px;
+    color: white;
+}
+.przycisk{
+    text-align: center;
+    padding: 3px;
+    font-size: 20px;
+    color: rgb(59, 123, 169);
+}
+video{
+    float: right;
+    margin-right: 500px;
+}
