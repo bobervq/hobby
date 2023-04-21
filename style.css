@@ -40,7 +40,9 @@ button:hover {
     background-color: #1976D2;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
-  
+#pisanie{
+    color: #357bb4;
+}  
 #naglowek{
     display: flex;
     flex-direction: row;
@@ -182,6 +184,12 @@ h2{
     font-size: 40px;
     text-transform: uppercase;
 }
+h3{
+    text-align: center;
+    color: rgb(33, 97, 144);
+    font-size: 30px;
+    text-transform: uppercase;
+}
 #mainstory{
     height: 800px;
 }
@@ -191,6 +199,7 @@ h2{
     height: 80px;
     font-family: Asasin;
     font-size: 30px;
+    color: gray;
     background-color: rgba(0,0,0,0.3);
     filter: brightness(50%);
 }
@@ -218,4 +227,86 @@ table{
 video{
     float: right;
     margin-right: 500px;
+    margin-top: 150px;
+    width: 400px;
+    border: 2px solid rgb(42, 103, 146);
+    border-radius: 5%;
+}
+#statek{
+    width: 90%;
+    background-image: url(IMG/statek.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1000px;
+    margin: 0 auto;
+}
+#naobrazku{
+    background-color: rgba(52, 138, 207, 0.5);
+    text-align: center;
+    font-size: 40px;
+}
+#horse{
+    width: 90%;
+    background-image: url(IMG/horse.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1200px;
+    margin: 0 auto;
+}
+#wolf{
+    width: 90%;
+    background-image: url(IMG/wolf.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin: 0 auto;
+}
+#bear{
+    width: 90%;
+    background-image: url(IMG/bear.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1000px;
+    margin: 0 auto;
+}
+#horse, #wolf, #bear, #maingalery img{
+    border: 2px solid rgb(42, 103, 146)
+}
+#postac{
+    width: 90%;
+    background-image: url(IMG/heroes.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 900px;
+    margin: 0 auto;
+}
+#maingalery img{
+    border-radius: 6px;
+    width: 30%;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#maingalery{
+    display: inline-block;
+}
+form{
+    margin: 0 auto;
+}
+fieldset{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#inp{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 30%;
+}
+#inp2{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 40%;
+
 }
