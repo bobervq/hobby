@@ -390,18 +390,34 @@ textarea{
         margin-right: 2px;
         border-radius: 9px;
     }
+    #logo{
+        border-radius: 25%;
+        position: sticky;
+        width: 30px;
+        margin-left: 5px;
+    }
+    #naglowek{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        padding-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
     #nawigacja{
         display: flex;
         justify-content: right;
         margin-right: 0px;
-        font-size: 20px;
+        font-size: 10px;
     }
     #tlo {
         background-image: url(IMG/tlo.jpg);
         background-size: cover;
         background-position: center center;
         filter: brightness(60%);
-        height: 800px;
+        height: 700px;
     }
     #strglowna{
         display: flex;
@@ -416,10 +432,18 @@ textarea{
         position: absolute;
         height: 100%;
         width: 100%;
-        color: rgb(33, 97, 144);
+        color: rgb(186, 211, 229);
         text-align: center;
         padding: 50px;
         text-transform: uppercase;
+    }
+    #stopka{
+        display: flex;
+        color: gray;
+        justify-content: center;
+        align-items: end;
+        font-size: 30px;
+        margin-top: 30px;
     }
     video{
         border: 2px solid rgb(42, 103, 146);
@@ -433,7 +457,7 @@ textarea{
     .link {
         display: inline-block;
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: 10px;
         border-top-right-radius: 6px;
         border-top-left-radius: 6px;
         background-color: rgb(33, 97, 144);
@@ -484,7 +508,7 @@ textarea{
       }
     
     h1:hover::before, h1:hover::after {
-      transform: scaleX(18);
+      transform: scaleX(0);
     }
     .storyp{
         color: rgb(33, 97, 144);
@@ -500,7 +524,7 @@ textarea{
         border-radius: 6px;
         border: 2px solid rgb(42, 103, 146);
         margin: 5px;
-        width: 40%;
+        width: 50%;
         height: auto;
     }
     .storyp::first-letter{
@@ -539,10 +563,10 @@ textarea{
     }
     #info{
         position: fixed;
-        width: 40%;
+        width: 0;
         height: 80px;
         font-family: Asasin;
-        font-size: 30px;
+        font-size: 0px;
         color: gray;
         background-color: rgba(0,0,0,0.3);
         filter: brightness(50%);
@@ -589,7 +613,7 @@ textarea{
         background-image: url(IMG/horse.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 280px;
+        height: 230px;
         margin: 0 auto;
     }
     #wolf{
@@ -597,7 +621,7 @@ textarea{
         background-image: url(IMG/wolf.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 200px;
+        height: 160px;
         margin: 0 auto;
     }
     #bear{
@@ -605,7 +629,7 @@ textarea{
         background-image: url(IMG/bear.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 200px;
+        height: 180px;
         margin: 0 auto;
     }
     #horse, #wolf, #bear, #maingalery img{
