@@ -206,9 +206,10 @@ h3{
     margin-right: 100px;
 }
 #mainstoryp{
-    height: 900px;
+    height: auto;
     margin-left: 100px;
     margin-right: 100px;
+    padding-bottom: 50px;
 }
 #info{
     position: fixed;
@@ -246,6 +247,8 @@ table{
 video{
     border: 2px solid rgb(42, 103, 146);
     border-radius: 5%;
+    width: 600px;
+    height: 340px;
 }
 #statek{
     width: 60%;
@@ -315,13 +318,24 @@ video{
     display: inline-block;
 }
 form{
-    margin: 0 auto;
+    width: 100%;
+    margin-left: 5%;
 }
 fieldset{
     float: left;
     margin-left: 50px;
     clear: right;
-    
+
+}
+textarea{
+    width: 90%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+
 }
 #inp{
     width: 100px;
@@ -342,7 +356,7 @@ fieldset{
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 40px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 2px 3px;
@@ -355,7 +369,7 @@ fieldset{
 .fa-facebook {
   background: #3B5998;
   color: white;
-  margin-left: 40%;
+
 }
 
 .fa-twitter {
@@ -365,4 +379,346 @@ fieldset{
 .fa-instagram {
     background: #125688;
     color: white;
+}
+.faaf{
+    width: 100%;
+    margin-left: 5%;
+}
+@media only screen and (max-width: 500px){
+    main{
+        margin-left: 2px;
+        margin-right: 2px;
+        border-radius: 9px;
+    }
+    #nawigacja{
+        display: flex;
+        justify-content: right;
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    #tlo {
+        background-image: url(IMG/tlo.jpg);
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(60%);
+        height: 800px;
+    }
+    #strglowna{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: rgb(219, 212, 212);
+        background-color: #2e6694;
+    }
+    #tekst {
+        font-size: 50px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        color: rgb(33, 97, 144);
+        text-align: center;
+        padding: 50px;
+        text-transform: uppercase;
+    }
+    video{
+        border: 2px solid rgb(42, 103, 146);
+        border-radius: 5%;
+        width: 300px;
+        height: 170px;
+    }
+    #opiion{
+        border-bottom-right-radius: 5px;
+    }
+    .link {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        background-color: rgb(33, 97, 144);
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .link:hover {
+        background-color: #2E8B57;
+        color: black;
+    }
+    .link:active {
+        background-color: #228B22;
+        transform: translateY(2px);
+    }
+    .link:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    h1 {
+      position: relative;
+    }
+    
+    h1::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 0;
+      height: 3%;
+      width: 20px;
+      background: linear-gradient(to right, black, rgb(33, 97, 144));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+    h1::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 0;
+        height: 3%;
+        width: 20px;
+        background: linear-gradient(to left, black, rgb(33, 97, 144));
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+      }
+    
+    h1:hover::before, h1:hover::after {
+      transform: scaleX(18);
+    }
+    .storyp{
+        color: rgb(33, 97, 144);
+        font-family: Asasin;
+        font-size: 30px;
+        text-align: justify;
+        text-indent: 5%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .storyp img{
+        filter: brightness(90%);
+        border-radius: 6px;
+        border: 2px solid rgb(42, 103, 146);
+        margin: 5px;
+        width: 40%;
+        height: auto;
+    }
+    .storyp::first-letter{
+        font-size: 40px;
+    }
+    .storyimgl{
+        float: left;
+    }
+    .storyimgp{
+        float: right;
+    }
+    h2{
+        text-align: center;
+        color: rgb(33, 97, 144);
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    h3{
+        text-align: center;
+        color: rgb(33, 97, 144);
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    #mainstory{
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-top-right-radius: 0px;
+    }
+    #mainstoryp{
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 25px;
+        border-top-right-radius: 0px;
+    }
+    #info{
+        position: fixed;
+        width: 40%;
+        height: 80px;
+        font-family: Asasin;
+        font-size: 30px;
+        color: gray;
+        background-color: rgba(0,0,0,0.3);
+        filter: brightness(50%);
+        margin-left: 0px;
+        border-radius: 6px;
+    }
+    table tr,td{
+        border: 2px solid rgb(42, 103, 146);
+    }
+    table{
+        border: 2px solid rgb(42, 103, 146);
+        color: white;
+        width: 35%;
+        margin: 0 auto;
+    }
+    .nazwa{
+        text-align: center;
+        padding: 3px;
+        font-size: 20px;
+        color: white;
+    }
+    .przycisk{
+        text-align: center;
+        padding: 3px;
+        font-size: 30px;
+        color: rgb(59, 123, 169);
+    }
+
+    #statek{
+        width: 80%;
+        background-image: url(IMG/statek.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 240px;
+        margin: 0 auto;
+    }
+    #naobrazku{
+        background-color: rgba(52, 138, 207, 0.5);
+        text-align: center;
+        font-size: 30px;
+    }
+    #horse{
+        width: 80%;
+        background-image: url(IMG/horse.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 280px;
+        margin: 0 auto;
+    }
+    #wolf{
+        width: 80%;
+        background-image: url(IMG/wolf.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        margin: 0 auto;
+    }
+    #bear{
+        width: 80%;
+        background-image: url(IMG/bear.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        margin: 0 auto;
+    }
+    #horse, #wolf, #bear, #maingalery img{
+        border: 2px solid rgb(42, 103, 146)
+    }
+    #postac{
+        width: 92%;
+        background-image: url(IMG/heroes.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 260px;
+        margin: 0 auto;
+    }
+    #gameplaymain{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #maingalery img{
+        border-radius: 6px;
+        width: 40%;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        transition-duration: 0.3s;
+    }
+    #maingalery img:hover{
+        transform: scale(1.1);
+    }
+    #maingalery{
+        display: inline-block;
+        border-top-right-radius: 0px;
+    }
+    #phone{
+        font-size: 30px;
+    }
+    #mainpg{
+        border-top-right-radius: 0px;
+    }
+    #phonem{
+        font-size: 25px;
+    }
+    form{
+        width: 100%;
+        margin-left: 5%;
+    }
+    fieldset{
+        float: left;
+        margin-left: 50px;
+        clear: right;
+    }
+    textarea{
+        width: 90%;
+        height: 150px;
+        padding: 12px 20px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+    
+    }
+    #inp{
+        width: 100px;
+        height: 50px;
+        border-radius: 8px;
+        margin-left: 2.5%;
+        padding: 12px 36px;
+        background-color: #4189c4;
+    }
+    #inp2{
+        width: 100px;
+        height: 50px;
+        border-radius: 8px;
+        margin-left: 1%;
+        padding: 12px 36px;
+        background-color: #4189c4;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px 3px;
+        border-radius: 6px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    .faaf{
+        width: 100%;
+        margin-left: 5%;
+    }
+    #stopkaf{
+        display: flex;
+        color: gray;
+        justify-content: center;
+        align-items: end;
+        font-size: 40px;
+    }
 }
